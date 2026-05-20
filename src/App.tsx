@@ -95,7 +95,7 @@ const experience = [
   {
     role: "Machine Learning Specialist & Software Engineer",
     organization: "Lamzytech",
-    period: "2023 – Present",
+    period: "2023 – 2026",
     details:
       "Lead engineering and model development for AI-enabled applications, building reliable data pipelines and scalable services for production use.",
   },
@@ -134,6 +134,13 @@ const awards = [
   "Dean’s Roll of Honor",
   "Academic Excellence Award",
   "NYSC Leadership Award",
+];
+
+const certifications = [
+  "IBM Introduction to Quantum Machine Learning",
+  "Google Quantum AI: Quantum Error Correction",
+  "University of Michigan: Python for Everybody",
+  "Coursera Deep Learning Specialization",
 ];
 
 const skills = [
@@ -239,50 +246,50 @@ function App() {
                   </div>
                 </div>
                 <div className="relative z-10">
-  <p className="text-sm font-semibold uppercase tracking-[0.32em] text-accent-500">
-    AI for Science Researcher
-  </p>
+                  {/* <p className="text-sm font-semibold uppercase tracking-[0.32em] text-accent-500">
+    I for Science Researcher
+  </p> */}
 
-  <h1 className="mt-5 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-    Daniel Ayomide Olanrewaju
-  </h1>
+                  <h1 className="mt-5 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
+                    Daniel Ayomide Olanrewaju
+                  </h1>
 
-  <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-    I build research-driven models at the intersection of
-    quantum computing, generative AI, and scientific discovery.
-    My work is grounded in algebraic structure, Hamiltonian
-    simulation, and the design of robust machine learning
-    solutions for academic and production contexts.
-  </p>
+                  <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
+                    My research is at the intersection of quantum computing,
+                    generative AI, and scientific discovery. My work is grounded
+                    in algebraic structure, Hamiltonian simulation, and the
+                    design of robust machine learning solutions for academic and
+                    production contexts.
+                  </p>
 
-  <div className="flex flex-wrap gap-3">
-    <a
-      href="#research"
-      className="inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
-    >
-      View Research
-    </a>
+                  <div className="flex flex-wrap gap-3">
+                    <a
+                      href="#research"
+                      className="inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+                    >
+                      View Research
+                    </a>
 
-    <a
-      href="/Daniel_Olanrewaju_CV.pdf"
-      className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
-    >
-      Download CV
-    </a>
-  </div>
-</div>
+                    <a
+                      href="/Daniel_Olanrewaju_CV.pdf"
+                      className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+                    >
+                      Download CV
+                    </a>
+                  </div>
+                </div>
 
-<div className="flex flex-wrap items-center gap-3 text-sm text-slate-600">
-  <IconLink
-    href="https://github.com/DanielAyomide-git"
-    label="GitHub"
-  />
+                <div className="flex flex-wrap items-center gap-3 text-sm text-slate-600">
+                  <IconLink
+                    href="https://github.com/DanielAyomide-git"
+                    label="GitHub"
+                  />
 
-  <IconLink
-    href="https://www.linkedin.com/in/daniel-ayomide-olanrewaju-922612174/"
-    label="LinkedIn"
-  />
-</div>
+                  <IconLink
+                    href="https://www.linkedin.com/in/daniel-ayomide-olanrewaju-922612174/"
+                    label="LinkedIn"
+                  />
+                </div>
               </div>
               <div className="rounded-[2rem] border border-slate-200 bg-white/80 p-8 shadow-soft backdrop-blur-sm">
                 <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-500">
@@ -507,7 +514,7 @@ function App() {
           <div className="mx-auto max-w-6xl">
             <SectionHeading
               title="Professional Experience"
-              description="Roles in research, engineering, and teaching that have shaped my approach to building robust, research-driven solutions in both academic and production contexts."
+              description="Roles in research, software engineering, machine learning, and teaching that have shaped my approach to building robust, research-driven solutions in both academic and production contexts."
             />
             <div className="space-y-6">
               {experience.map((item, index) => (
@@ -555,12 +562,12 @@ function App() {
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
               <SectionCard>
                 <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-500">
-                  Certification highlights
+                  Certifications
                 </p>
                 <ul className="mt-5 space-y-3 text-slate-700">
-                  <li>IBM Introduction to Quantum Machine Learning</li>
-                  <li>Google Quantum AI: Quantum Error Correction</li>
-                  <li>University of Michigan: Python for Everybody</li>
+                  {certifications.map((cert) => (
+                    <li key={cert}>{cert}</li>
+                  ))}
                 </ul>
               </SectionCard>
               <SectionCard>
@@ -652,9 +659,7 @@ function App() {
       </main>
 
       <footer className="border-t border-slate-200 bg-white px-6 py-8 text-center text-sm text-slate-500 sm:px-8 lg:px-10">
-        <p>
-          © {new Date().getFullYear()} Daniel Ayomide Olanrewaju
-        </p>
+        <p>© {new Date().getFullYear()} Daniel Ayomide Olanrewaju</p>
       </footer>
     </div>
   );
