@@ -255,11 +255,12 @@ function App() {
                   </h1>
 
                   <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-                    My research is at the intersection of quantum computing,
-                    generative AI, and scientific discovery. My work is grounded
-                    in algebraic structure, Hamiltonian simulation, and the
-                    design of robust machine learning solutions for academic and
-                    production contexts.
+                    My research is at the intersection of mathematics, quantum
+                    computing, generative AI, and scientific discovery. My work
+                    is grounded in algebraic structures and quantum error
+                    correction, Hamiltonian simulation, and the design of robust
+                    machine learning solutions for academic and production
+                    contexts.
                   </p>
 
                   <div className="flex flex-wrap gap-3">
@@ -289,6 +290,10 @@ function App() {
                     href="https://www.linkedin.com/in/daniel-ayomide-olanrewaju-922612174/"
                     label="LinkedIn"
                   />
+                  <IconLink
+                    href="https://medium.com/@lanredaniel377"
+                    label="Medium"
+                  />
                 </div>
               </div>
               <div className="rounded-[2rem] border border-slate-200 bg-white/80 p-8 shadow-soft backdrop-blur-sm">
@@ -315,8 +320,9 @@ function App() {
                       Research themes
                     </p>
                     <p className="mt-1 text-sm text-slate-600">
-                      Quantum Computing · Hamiltonian Simulation · Quantum
-                      Machine Learning · Generative AI · Algebra
+                      Quantum Computing · Hamiltonian Simulation · Quantum Error
+                      Correction · Generative AI · AI for Quantum Computing ·
+                      Algebra and Representation Theory
                     </p>
                   </div>
                 </div>
@@ -337,12 +343,11 @@ function App() {
             <div className="grid gap-8 lg:grid-cols-[0.9fr_0.7fr]">
               <div className="space-y-6 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-soft">
                 <p className="text-slate-600 leading-8">
-                  I am pursuing an MSc in Mathematical Sciences with
+                  I completed an MSc in Mathematical Sciences with
                   specialization in Artificial Intelligence for Science at AIMS
-                  South Africa. My training is centered on rigorous mathematical
-                  foundations, structured models, and applications of machine
-                  learning to quantum systems, scientific simulation, and
-                  data-driven discovery.
+                  South Africa. I did my thesis with the AIMS Quantum research
+                  group under the supervision of Dr. Ryan Sweke and examined by
+                  Dr. Kouhei Nakaji.
                 </p>
                 <p className="text-slate-600 leading-8">
                   I have worked across research, engineering, and teaching roles
@@ -364,8 +369,9 @@ function App() {
                       Interests
                     </p>
                     <p className="mt-3 text-slate-700">
-                      AI for scientific discovery · Quantum machine learning ·
-                      Algebraic structure
+                      AI for scientific discovery · Quantum computing · Algebra
+                      and representation theory · Quantum error correction ·
+                      Generative AI
                     </p>
                   </div>
                 </div>
@@ -396,7 +402,7 @@ function App() {
                   </p>
                   <div className="mt-5 space-y-3 text-slate-700">
                     {[
-                      "Quantum machine learning",
+                      "Quantum error correction codes",
                       "Equivariant transformers",
                       "AI for scientific discovery",
                       "Hamiltonian dynamics",
