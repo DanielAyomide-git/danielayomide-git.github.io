@@ -254,13 +254,19 @@ function App() {
                     Daniel Ayomide Olanrewaju
                   </h1>
 
-                  <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
+                  <p className="mt-6 mb-4 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
                     My research is at the intersection of mathematics, quantum
                     computing, generative AI, and scientific discovery. My work
-                    is grounded in algebraic structures and quantum error
-                    correction, Hamiltonian simulation, and the design of robust
-                    machine learning solutions for academic and production
-                    contexts.
+                    is grounded in quantum information theory, theoretical
+                    foundations of quantum computing, quantum error correction,
+                    dis- tributed quantum computing, quantum algorithms,
+                    computational complexity theory, models of quantum
+                    computation, quantum communication, Hamiltonian simulation,
+                    random quantum circuits, fault-tolerant quan- tum computing,
+                    classical simulation of quantum systems, mathematical
+                    methods for quantum computing, quantum characterization and
+                    benchmarking, and artificial intelligence for quantum
+                    computing. contexts.
                   </p>
 
                   <div className="flex flex-wrap gap-3">
