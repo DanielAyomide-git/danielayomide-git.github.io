@@ -6,6 +6,16 @@ const profileImage = `${(import.meta as any).env?.BASE_URL ?? "/"}picture.png`;
 
 const publications = [
   {
+    title: "Generative Hamiltonian Simulation",
+    subtitle:
+      "MSc thesis prototype in quantum simulation and generative modelling.",
+    description:
+      "Exploring structure-aware generative approaches to Hamiltonian systems, circuit optimization, and physics-informed quantum workflows for scientific discovery.",
+    tags: ["Qiskit", "Quantum Simulation", "Generative AI"],
+    link: "https://doi.org/10.13140/RG.2.2.21841.08804",
+    year: "2026",
+  },
+  {
     title: "Partial Symmetry Enforced Attention Decomposition (PSEAD)",
     subtitle:
       "A group-theoretic framework for equivariant transformers in biological systems.",
@@ -190,9 +200,6 @@ function App() {
             Daniel Ayomide Olanrewaju
           </a>
           <nav className="hidden items-center gap-6 text-sm text-slate-600 md:flex">
-            <a href="#about" className="transition hover:text-slate-900">
-              About
-            </a>
             <a href="#research" className="transition hover:text-slate-900">
               Research
             </a>
@@ -256,17 +263,17 @@ function App() {
 
                   <p className="mt-6 mb-4 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
                     My research is at the intersection of mathematics, quantum
-                    computing, generative AI, and scientific discovery. My work
-                    is grounded in quantum information theory, theoretical
-                    foundations of quantum computing, quantum error correction,
-                    dis- tributed quantum computing, quantum algorithms,
+                    computing, generative AI, and scientific discovery. My
+                    experience is grounded in quantum information theory,
+                    theoretical foundations of quantum computing, quantum
+                    chemistry, Hamiltonian simulation, quantum error correction,
+                    distributed quantum computing, quantum algorithms,
                     computational complexity theory, models of quantum
-                    computation, quantum communication, Hamiltonian simulation,
-                    random quantum circuits, fault-tolerant quan- tum computing,
-                    classical simulation of quantum systems, mathematical
-                    methods for quantum computing, quantum characterization and
-                    benchmarking, and artificial intelligence for quantum
-                    computing. contexts.
+                    computation, quantum communication, random quantum circuits,
+                    fault-tolerant quantum computing, classical simulation of
+                    quantum systems, mathematical methods for quantum computing,
+                    quantum characterization and benchmarking, and artificial
+                    intelligence for quantum computing. contexts.
                   </p>
 
                   <div className="flex flex-wrap gap-3">
@@ -302,126 +309,57 @@ function App() {
                   />
                 </div>
               </div>
-              <div className="rounded-[2rem] border border-slate-200 bg-white/80 p-8 shadow-soft backdrop-blur-sm">
-                <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-500">
-                  Academic profile
-                </p>
-                <div className="mt-8 space-y-5 text-slate-700">
-                  <div>
-                    <p className="font-semibold text-slate-900">
-                      MSc in Mathematical Sciences (AI for Science)
-                    </p>
-                    <p className="mt-1 text-sm text-slate-600">
-                      AIMS South Africa
-                    </p>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-slate-900">
-                      Google DeepMind Scholar
-                    </p>
-                    <p className="mt-1 text-sm text-slate-600">2025 cohort</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-slate-900">
-                      Research themes
-                    </p>
-                    <p className="mt-1 text-sm text-slate-600">
-                      Quantum Computing · Hamiltonian Simulation · Quantum Error
-                      Correction · Generative AI · AI for Quantum Computing ·
-                      Algebra and Representation Theory
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          id="about"
-          className="border-t border-slate-200 bg-slate-50 px-6 py-16 sm:px-8 lg:px-10"
-        >
-          <div className="mx-auto max-w-6xl">
-            <SectionHeading
-              title="About"
-              description="I combine academic research with practical engineering to advance quantum computing and AI solutions for science-focused problems."
-            />
-            <div className="grid gap-8 lg:grid-cols-[0.9fr_0.7fr]">
-              <div className="space-y-6 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-soft">
-                <p className="text-slate-600 leading-8">
-                  I completed an MSc in Mathematical Sciences with
-                  specialization in Artificial Intelligence for Science at AIMS
-                  South Africa. I did my thesis with the AIMS Quantum research
-                  group under the supervision of Dr. Ryan Sweke and examined by
-                  Dr. Kouhei Nakaji.
-                </p>
-                <p className="text-slate-600 leading-8">
-                  I have worked across research, engineering, and teaching roles
-                  to translate complex academic ideas into robust systems. My
-                  objective is to drive research that is both mathematically
-                  grounded and deployable in real-world scientific workflows.
-                </p>
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-500">
-                      Education
-                    </p>
-                    <p className="mt-3 text-slate-700">
-                      AIMS South Africa · University of Ibadan
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-500">
-                      Interests
-                    </p>
-                    <p className="mt-3 text-slate-700">
-                      AI for scientific discovery · Quantum computing · Algebra
-                      and representation theory · Quantum error correction ·
-                      Generative AI
-                    </p>
-                  </div>
-                </div>
-              </div>
               <div className="space-y-6">
-                <SectionCard>
+                <div className="rounded-[2rem] border border-slate-200 bg-white/80 p-8 shadow-soft backdrop-blur-sm">
                   <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-500">
-                    Selected research interests
+                    Academic profile
                   </p>
-                  <ul className="mt-5 space-y-3 text-slate-700">
-                    {[
-                      "Quantum Computing",
-                      "Hamiltonian Simulation",
-                      "Quantum Machine Learning",
-                      "Generative AI",
-                      "Algebra",
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-accent-500" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </SectionCard>
-                <SectionCard>
-                  <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-500">
-                    Currently exploring
-                  </p>
-                  <div className="mt-5 space-y-3 text-slate-700">
-                    {[
-                      "Quantum error correction codes",
-                      "Equivariant transformers",
-                      "AI for scientific discovery",
-                      "Hamiltonian dynamics",
-                    ].map((item) => (
-                      <div
-                        key={item}
-                        className="rounded-2xl bg-slate-50 px-4 py-3 text-sm text-slate-700"
-                      >
-                        {item}
+                  <div className="mt-8 space-y-5 text-slate-700">
+                    <div>
+                      <p className="font-semibold text-slate-900">
+                        MSc in Mathematical Sciences (AI for Science)
+                      </p>
+                      <p className="mt-1 text-sm text-slate-600">
+                        AIMS South Africa · Distinction
+                      </p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-slate-900">
+                        Google DeepMind Scholar
+                      </p>
+                      <p className="mt-1 text-sm text-slate-600">2025 cohort</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-slate-900">Education</p>
+                      <div className="mt-1 space-y-1 text-sm text-slate-600">
+                        <p>
+                          AIMS South Africa — MSc in Mathematical Sciences,
+                          Distinction
+                        </p>
+                        <p>
+                          University of Ibadan — BSc Mathematics, First-Class
+                          Honours
+                        </p>
                       </div>
-                    ))}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-slate-900">
+                        Research themes
+                      </p>
+                      <p className="mt-1 text-sm text-slate-600">
+                        Quantum Computing · Hamiltonian Simulation · Quantum
+                        Chemistry · Quantum Error Correction · Generative AI ·
+                        AI for Quantum Computing · Algebra and Representation
+                        Theory
+                      </p>
+                    </div>
+                    <p className="pt-2 text-sm leading-7 text-slate-600">
+                      In July 2026 I completed my MSc thesis with the AIMS
+                      Quantum research group under the supervision of Dr. Ryan
+                      Sweke and examined by Dr. Kouhei Nakaji.
+                    </p>
                   </div>
-                </SectionCard>
+                </div>
               </div>
             </div>
           </div>
@@ -498,34 +436,10 @@ function App() {
           </div>
         </section>
 
-        <section id="coming" className="px-6 py-16 sm:px-8 lg:px-10">
-          <div className="mx-auto max-w-6xl">
-            <SectionHeading title="Coming" description="Thesis." />
-            <div className="grid gap-6 xl:grid-cols-3">
-              <Card
-                title="Generative Hamiltonian Simulation"
-                subtitle="MSc thesis prototype in quantum simulation and generative modelling."
-                footer="In progress"
-              >
-                <p>
-                  Exploring structure-aware generative approaches to Hamiltonian
-                  systems, circuit optimization, and physics-informed quantum
-                  workflows for scientific discovery.
-                </p>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  <Badge label="Qiskit" />
-                  <Badge label="Quantum Simulation" />
-                  <Badge label="Generative AI" />
-                </div>
-              </Card>
-            </div>
-          </div>
-        </section>
-
         <section id="experience" className="px-6 py-16 sm:px-8 lg:px-10">
           <div className="mx-auto max-w-6xl">
             <SectionHeading
-              title="Professional Experience"
+              title="Work and Research Experience"
               description="Roles in research, software engineering, machine learning, and teaching that have shaped my approach to building robust, research-driven solutions in both academic and production contexts."
             />
             <div className="space-y-6">
