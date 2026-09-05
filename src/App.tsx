@@ -79,11 +79,11 @@ const projects = [
     demo: "https://agearc.app/",
   },
   {
-    title: "i-Subscribe",
+    title: "FastSubscribe",
     description:
       "A subscription management and payment automation platform for digital services, built with reliable backend workflows and customer-facing frontend flows.",
     tech: ["FastAPI", "PostgreSQL", "DevOps"],
-    demo: "https://i-subscribe.ng/",
+    demo: "https://fastsubscribe.ng/",
   },
   {
     title: "Todoya",
