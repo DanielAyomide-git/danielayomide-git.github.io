@@ -106,7 +106,7 @@ const experience = [
     organization: "Lamzytech",
     period: "2023 – 2026",
     details:
-      "Lead engineering and model development for AI-enabled applications, building reliable data pipelines and scalable services for production use.",
+      "Led engineering and model development for AI-enabled applications, built reliable data pipelines and scalable services for production use.",
   },
   {
     role: "Research Assistant",
