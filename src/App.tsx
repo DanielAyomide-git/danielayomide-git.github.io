@@ -12,7 +12,7 @@ const publications = [
     description:
       "Exploring structure-aware generative approaches to Hamiltonian systems, circuit optimization, and physics-informed quantum workflows for scientific discovery.",
     tags: ["Qiskit", "Quantum Simulation", "Generative AI"],
-    link: "https://doi.org/10.13140/RG.2.2.21841.08804",
+    link: "https://www.researchgate.net/publication/412733080_Generative_Hamiltonian_Simulation",
     year: "2026",
   },
   {
