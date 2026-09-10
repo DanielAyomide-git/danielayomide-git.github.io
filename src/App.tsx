@@ -261,12 +261,13 @@ function App() {
                   </h1>
 
                   <p className="mt-6 mb-4 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-                    My research is at the intersection of mathematics, Quantum
-                    AI, quantum circuit compilation and optimization for
-                    near-term and fault-tolerance devices, Hamiltonian
-                    simulation, classical simulation of quantum systems,
-                    mathematical methods for quantum computing, artificial
-                    intelligence and its applications
+                    My research is at the intersection of mathematics,
+                    artificial intelligence and its applications to scientific
+                    discovery, quantum AI, quantum circuit compilation and
+                    optimization for near-term and fault-tolerance devices,
+                    Hamiltonian simulation, classical simulation of quantum and
+                    chemical systems, mathematical methods for quantum
+                    computing.
                   </p>
 
                   <div className="flex flex-wrap gap-3">
