@@ -7,8 +7,7 @@ const profileImage = `${(import.meta as any).env?.BASE_URL ?? "/"}picture.png`;
 const publications = [
   {
     title: "Generative Hamiltonian Simulation",
-    subtitle:
-      "MSc thesis prototype in quantum simulation and generative modelling.",
+    subtitle: "MSc thesis.",
     description:
       "Exploring structure-aware generative approaches to Hamiltonian systems, circuit optimization, and physics-informed quantum workflows for scientific discovery.",
     tags: ["Qiskit", "Quantum Simulation", "Generative AI"],
