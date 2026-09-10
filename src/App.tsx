@@ -261,18 +261,12 @@ function App() {
                   </h1>
 
                   <p className="mt-6 mb-4 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-                    My research is at the intersection of mathematics, quantum
-                    computing, generative AI, and scientific discovery. My
-                    experience is grounded in quantum information theory,
-                    theoretical foundations of quantum computing, quantum
-                    chemistry, Hamiltonian simulation, quantum error correction,
-                    distributed quantum computing, quantum algorithms,
-                    computational complexity theory, models of quantum
-                    computation, quantum communication, random quantum circuits,
-                    fault-tolerant quantum computing, classical simulation of
-                    quantum systems, mathematical methods for quantum computing,
-                    quantum characterization and benchmarking, and artificial
-                    intelligence for quantum computing. contexts.
+                    My research is at the intersection of mathematics, Quantum
+                    AI, quantum circuit compilation and optimization for
+                    near-term and fault-tolerance devices, Hamiltonian
+                    simulation, classical simulation of quantum systems,
+                    mathematical methods for quantum computing, artificial
+                    intelligence and its applications
                   </p>
 
                   <div className="flex flex-wrap gap-3">
